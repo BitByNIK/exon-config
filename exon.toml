@@ -1,0 +1,46 @@
+# exon config: https://github.com/bitbynik/exon
+
+[apps]
+taps = ["migsilva89/imark"]
+
+formulae = [
+  "bash",
+  "eza",
+  "gh",
+  "git",
+  "mole",
+  "omp",
+  "starship",
+  "tmux",
+  "zoxide",
+  "zsh-autosuggestions",
+  "zsh-syntax-highlighting",
+]
+
+casks = [
+  # apps
+  "1password",
+  "betterdisplay",
+  "blip",
+  "chatgpt",              # includes Codex
+  "claude",
+  "google-chrome",
+  "iina",
+  "migsilva89/imark/imark",
+  "keyboardcleantool",
+  "obsidian",
+  "orbstack",
+  "raspberry-pi-imager",
+  "spotify",
+  "tailscale-app",
+  "telegram",
+  "wezterm",
+  "whatsapp",
+  "zed",
+  # fonts
+  "font-jetbrains-mono",
+  "font-meslo-lg-nerd-font",
+]
+
+[configs]
+source = "home"
