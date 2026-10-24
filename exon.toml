@@ -44,3 +44,20 @@ casks = [
 
 [configs]
 source = "home"
+
+[git]
+set_name_and_email = true
+
+[ssh]
+ask_for_hosts = true
+ask_about_1password = true
+
+[tmux]
+install_plugin_manager = true
+
+[checklist]
+items = [
+  "gh auth login --web --git-protocol https && gh auth setup-git",
+  "1Password → Settings → Developer → turn on the SSH agent",
+  "omp → /login",
+]
