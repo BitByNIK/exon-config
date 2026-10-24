@@ -1,12 +1,13 @@
 # exon-config
 
-My personal setup for [exon](https://github.com/bitbynik/exon).
+My Mac setup, applied with [exon](https://github.com/BitByNIK/exon).
 
 ```sh
+brew install bitbynik/tap/exon
 exon setup bitbynik/exon-config
 ```
 
-- `exon.toml`: Homebrew packages and step settings
-- `home/`: config files, copied to the same path under `~`
+- `exon.toml`: the apps to install
+- `home/`: config files, copied to the same place under `~`
 
 Contains no logins, tokens or keys.
