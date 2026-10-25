@@ -1,0 +1,5 @@
+theme:
+  dark: titanium
+symbolPreset: nerd
+composer:
+  shape: claude

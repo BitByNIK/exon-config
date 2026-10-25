@@ -1,0 +1,22 @@
+# Case-insensitive tab completion
+set completion-ignore-case on
+
+# Show candidates on the first Tab press
+set show-all-if-ambiguous on
+
+# Highlight matching characters and color-code file types
+set colored-stats on
+set colored-completion-prefix on
+
+# Complete common prefix first, then cycle
+set menu-complete-display-prefix on
+
+# Tab cycles forward through candidates
+TAB: menu-complete
+
+# Shift + Tab cycles backward
+"\e[Z": menu-complete-backward
+
+# Up/Down arrows search history matching what is already typed
+"\e[A": history-search-backward
+"\e[B": history-search-forward

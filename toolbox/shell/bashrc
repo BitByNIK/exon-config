@@ -1,0 +1,19 @@
+# Shell settings for every dev container. exon loads this last from ~/.bashrc, so it wins over the image's
+# own settings. Edit it here, then run: exon dev install bitbynik/exon-config
+
+# oh-my-bash. It lives in the toolbox (put there by exon dev install), not in each container's home.
+export OSH=/opt/toolbox/lib/oh-my-bash
+OSH_THEME="lambda"
+plugins=(git)
+[ -f "$OSH/oh-my-bash.sh" ] && source "$OSH/oh-my-bash.sh"
+
+# fzf: key bindings and completion come from the program itself.
+command -v fzf >/dev/null && eval "$(fzf --bash)"
+
+# eza instead of ls. Not inside omp's own shell (it sets OMPCODE), so the agent keeps plain ls output.
+if command -v eza >/dev/null && [ -z "${OMPCODE:-}" ]; then
+  alias ls='eza --group-directories-first'
+  alias ll='eza -l --git --group-directories-first --time-style=relative'
+  alias la='eza -la --git --group-directories-first'
+  alias lt='eza --tree --level=2 --git-ignore'
+fi

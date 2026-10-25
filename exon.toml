@@ -55,6 +55,10 @@ ask_about_1password = true
 [tmux]
 install_plugin_manager = true
 
+# The shared toolbox for dev containers: exon dev install bitbynik/exon-config
+[dev]
+tools = ["omp", "codebase-memory-mcp", "gh", "fzf", "eza", "oh-my-bash"]
+
 [checklist]
 items = [
   "gh auth login --web --git-protocol https && gh auth setup-git",
