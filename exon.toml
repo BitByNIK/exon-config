@@ -9,7 +9,7 @@ formulae = [
   "gh",
   "git",
   "mole",
-  "omp",
+  "can1357/tap/omp",
   "starship",
   "tmux",
   "zoxide",
