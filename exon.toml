@@ -1,8 +1,6 @@
 # exon config: https://github.com/bitbynik/exon
 
 [apps]
-taps = ["migsilva89/imark"]
-
 formulae = [
   "bash",
   "eza",
