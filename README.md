@@ -11,6 +11,7 @@ exon setup bitbynik/exon-config
 - `home/`: config files, copied to the same place under `~`
 - `toolbox/`: starter files for the shared toolbox that my dev containers use. It has the same layout as the toolbox volume. A file is copied in only if the volume doesn't have it yet, so changes made inside a container are kept.
   - `toolbox/state/omp/agent/config.yml`: omp's settings in containers
+  - `toolbox/state/omp/agent/mcp.json`: registers the codebase-memory MCP with omp in containers
   - `toolbox/shell/bashrc`, `toolbox/shell/inputrc`: the shell setup in containers
 
 ## Dev containers
