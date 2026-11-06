@@ -13,6 +13,8 @@ exon setup bitbynik/exon-config
   - `toolbox/state/omp/agent/config.yml`: omp's settings in containers
   - `toolbox/state/omp/agent/mcp.json`: registers the codebase-memory MCP with omp in containers
   - `toolbox/state/omp/agent/AGENTS.md`: how omp uses the browser in containers that have Chromium
+  - `toolbox/state/claude/CLAUDE.md`: Claude's instructions in containers
+  - `toolbox/state/claude/mcp.json`: registers the codebase-memory MCP with Claude in containers
   - `toolbox/shell/bashrc`, `toolbox/shell/inputrc`: the shell setup in containers
 
 ## Dev containers
@@ -27,6 +29,7 @@ Then open the project in Zed and choose "personal". In any one container, sign i
 ```sh
 gh auth login --web --git-protocol https && gh auth setup-git
 omp   # then /login
+claude   # then follow the prompt: open the address on your Mac, paste the code back
 ```
 
 Contains no logins, tokens or keys.

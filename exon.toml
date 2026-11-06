@@ -54,11 +54,12 @@ install_plugin_manager = true
 
 # The shared toolbox for dev containers: exon dev install bitbynik/exon-config
 [dev]
-tools = ["omp", "codebase-memory-mcp", "gh", "fzf", "eza", "oh-my-bash"]
+tools = ["omp", "claude", "codebase-memory-mcp", "gh", "fzf", "eza", "oh-my-bash"]
 
 [checklist]
 items = [
   "gh auth login --web --git-protocol https && gh auth setup-git",
   "1Password → Settings → Developer → turn on the SSH agent",
   "omp → /login",
+  "claude → sign in (run it in a dev container)",
 ]
