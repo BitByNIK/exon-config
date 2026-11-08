@@ -12,8 +12,9 @@ exon setup bitbynik/exon-config
 - `toolbox/`: starter files for the shared toolbox that my dev containers use. It has the same layout as the toolbox volume. A file is copied in only if the volume doesn't have it yet, so changes made inside a container are kept.
   - `toolbox/state/omp/agent/config.yml`: omp's settings in containers
   - `toolbox/state/omp/agent/mcp.json`: registers the codebase-memory MCP with omp in containers
-  - `toolbox/state/omp/agent/AGENTS.md`: how omp uses the browser in containers that have Chromium
-  - `toolbox/state/claude/CLAUDE.md`: Claude's instructions in containers
+  - `toolbox/state/omp/agent/AGENTS.md`: the instructions for omp and Claude in containers: the browser, the codebase-memory MCP, when to ask before changing anything, and the shared toolbox
+  - `toolbox/state/claude/CLAUDE.md`: imports the omp `AGENTS.md` above, so both tools follow the same instructions
+  - `toolbox/state/claude/settings.json`: Claude's settings in containers: model, display preferences and no commit attribution
   - `toolbox/state/claude/mcp.json`: registers the codebase-memory MCP with Claude in containers
   - `toolbox/shell/bashrc`, `toolbox/shell/inputrc`: the shell setup in containers
 

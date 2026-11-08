@@ -1,5 +1,7 @@
 theme:
   dark: titanium
-symbolPreset: nerd
+symbolPreset: unicode
 composer:
   shape: claude
+tools:
+  approvalMode: always-ask
